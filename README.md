@@ -13,14 +13,11 @@ You can also get the source [here](git@github.com:IntegriChain1/DFMock.git)
 
 ## The API
 using is simple. 
-import into your module, select your column names and data types, set the number of columns, and generate your frame. 
-    from dfmock import DFMock
+import into your module, select your column names and data types, set the number of columns, and generate your frame.
 
-    columns = { "hamburger":"string",
-                "hot_dog":"integer",
-                "shoelace":"timedelta"
-              }
-    dfmock = DFMock(count=100, cols=columns)
+    from dfmock.dfmock import DFMock
+    
+    dfmock = DFMock(count=100)
     dfmock.generate_dataframe()
 
     my_mocked_dataframe = dfmock.dataframe
